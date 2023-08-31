@@ -37,7 +37,7 @@ def predict():
     # Handle POST request
     data = request.get_json()
     text = data.get("text", "")
-    model = data.get("model", "cl100k_base")  # replace 'gpt-3' with your default model
+    model = data.get("model", "gpt-4")
     token_count = count_string_tokens(text, model)
     return jsonify({"token_count": token_count}), 200
 

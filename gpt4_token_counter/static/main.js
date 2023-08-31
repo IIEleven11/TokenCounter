@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
   function predictTokens() {
     const text = queryInput.value;
-    const model = "cl100k_base";
+    const model = "gpt-4";
     fetch("http://localhost:5000/predict", {
       method: "POST",
       headers: {
